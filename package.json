@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/"
+    "url": "git@github.com:DhavalDalal/TopQuery.git"
   },
   "keywords": [
     "top",

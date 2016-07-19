@@ -1,5 +1,5 @@
 function TopQuery() {
-	this.NO_MAXIMUM_LIMIT = -1;
+    this.NO_MAXIMUM_LIMIT = -1;
     this.dbType = -1;
     this.maxResults = this.NO_MAXIMUM_LIMIT;
 };
