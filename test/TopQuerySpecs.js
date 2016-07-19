@@ -1,4 +1,4 @@
-describe("TopQuerySpecs", function () {
+describe("TopQuerySpecs", () => {
 
     var topQuery, sql, maxResults;
 
