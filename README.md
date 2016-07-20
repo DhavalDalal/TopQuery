@@ -1,15 +1,16 @@
 #TopQuery
 
-This assumes you have Node.js and Karma installed on your machine.  We will use Jasmine, Karma, Sinon to run and execute our tests.
-
+This assumes you have Node.js and Karma installed on your machine.  We will use Jasmine and Karma to execute our tests.
+### First Things First
+* Run `npm install` to get all the dependencies sorted out.
+* If you don't have Karma installed, please go to the next section, else perform the next step.
+* Type `npm test` at the command prompt and wait for the tests to run.  
 
 ###To install Karma, please do the following:
 * `npm install karma --save`
 * `npm install -g karma-cli`
 
-Type `npm test` at the command prompt and wait for the tests to run.  
-
-**Note**: In case things don't go right, you can follow the steps below manually and run the Following Commands to set up Karma and Jasmine for the project. 
+**Note**: In case things don't go right, you can follow the steps below manually and run the Following Commands to set up Jasmine for the project by re-creating karma.conf.js
 
 * `npm install jasmine --save`
 * `karma init` (and follow through all the questions.  It will integrate all the launchers by modifying the package.json.  It adds all the dependencies as `devDependencies`.  Move them to `dependencies`)
@@ -21,9 +22,7 @@ Type `npm test` at the command prompt and wait for the tests to run.
       'test/**/*Spec[s].js'
     ],
     ```
-* Replace the following in `package.json`, in the `"test"` section:
+* Check if the following still exists in `package.json`, else replace the following in `package.json`, in the `"test"` section:
    
    ```"karma start >/dev/null & sleep 3 && karma run && ps -ef | grep karma | grep -v grep | awk '{print $2}' | xargs kill -9"```
-   
-* To execute the tests, type `npm test`
   
